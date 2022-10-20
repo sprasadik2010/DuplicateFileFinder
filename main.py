@@ -1,11 +1,11 @@
 import datetime
 
-from DuplicateRemover import DuplicateRemover
+from DuplicateChecker import DuplicateChecker
 
 dirname = "images"
 print("Started Time {}".format(datetime.datetime.now()))
 # Remove Duplicates
-dr = DuplicateRemover(dirname)
+dr = DuplicateChecker(dirname)
 dr.find_duplicates()
 dr.find_similar(dirname,100)
 print("End Time {}".format(datetime.datetime.now()))
